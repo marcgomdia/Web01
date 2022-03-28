@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<body id="fondo">
+<div class="text-center" >
+    <h1 class="display-4">Autor:Marc Gómez @ViewBag.Vname</h1>
+
+    <div class="container">
+  <h2>Proyectos</h2>
+  </div>
+
+  <div class="row" >
+
+  <div class="card" style="width:400px" id="cv">
+    <img class="card-img-top" src="~/img/curr1.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Mis Conocimientos</h4>
+      <p class="card-text">Este es el sitio donde está mi curriculum vitae</p>
+      <a asp-action="MisConocimientos" class="btn btn-primary">Ver Conocimientos</a>
+    </div>
+  </div>
+  <br>
+
+  <div class="card" style="width:400px" id="avatar">
+    <img class="card-img-top" src="~/img/ava.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Proyectos</h4>
+      <p class="card-text">Este es el sitio donde puedes ver todos mis proyectos</p>
+      <a asp-action="MisProyectos" class="btn btn-primary">Ver proyectos</a>
+    </div>
+  </div>
+  <br>
+
+  <div class="card" style="width:400px" id="contacto">
+    <img class="card-img-top" src="~/img/contacto.png" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">Contacto</h4>
+      <p class="card-text">Este es el sitio puedes contactar conmigo</p>
+      <a asp-action="Contactar" class="btn btn-primary">Contacta conmigo</a>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
